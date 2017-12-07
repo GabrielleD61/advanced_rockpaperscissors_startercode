@@ -19,8 +19,10 @@
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 //GLOBAL VARIABLES
-
-
+var Computer = "";
+var User = "";
+var Winner = "";
+var choices = "";
 
 //FUNCTIONS
 
