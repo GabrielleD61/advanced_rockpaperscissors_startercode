@@ -19,14 +19,24 @@
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 //GLOBAL VARIABLES
-var Computer = "";
-var User = "";
-var Winner = "";
-var choices = "";
+var Computer ="paper";
+var User = "scissors";
+var Winner = "rock";
+var choices =["rock", "paper", "scissors"];
 
+console.log(choices.length);
+
+var x = Math.floor(Math.random() * choices.length);
+console.log(choices[x]);
 //FUNCTIONS
-
+$()
 
 
 // DOCUMENT READY FUNCTION
+$(document).ready(function() {
+        $("#Shoot").click(function() {
+                console.log();
+        });
+        
+});
 
