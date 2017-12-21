@@ -35,7 +35,8 @@ $()
 // DOCUMENT READY FUNCTION
 $(document).ready(function() {
         $("#Shoot").click(function() {
-                console.log();
+                var Crandom = choices[x]
+                $("#CMP").html(Crandom);
         });
         
 });
