@@ -19,25 +19,43 @@
 //****************** SERIOUSLY TEST USING console.log()!!! ******************
 
 //GLOBAL VARIABLES
-var Computer ="paper";
-var User = "scissors";
-var Winner = "rock";
-var choices =["rock", "paper", "scissors"];
-
-console.log(choices.length);
-
-var x = Math.floor(Math.random() * choices.length);
-console.log(choices[x]);
-//FUNCTIONS
-$()
-
-
-// DOCUMENT READY FUNCTION
 $(document).ready(function() {
-        $("#Shoot").click(function() {
-                var Crandom = choices[x]
-                $("#CMP").html(Crandom);
-        });
-        
+      $("#Shoot").click(function() {
+           var choices =["rock", "paper", "scissors"];
+           var RPS = Math.floor(Math.random()*3);
+           console.log(choices[RPS]);
+           var Crandom = choices[RPS];
+            $("#CMP").html(Crandom);
+            
+         var red= $("input").val();
+        $("#UC").html(red);
+        if(red === Crandom){
+              $("#W").html("no one wins");
+        }
+         if(red === "paper" && Crandom === "rock"){
+              $("#W").html("User Wins");
+        }
+         if(red === "rock" && Crandom === "paper"){
+              $("#W").html("Computer Wins");
+        }
+         if(red === "rock" && Crandom === "scissors"){
+              $("#W").html("User Wins");
+        }
+        if(red === "scissors" && Crandom === "rock"){
+              $("#W").html("Computer Wins");
+        }
+        if(red === "paper" && Crandom === "rock"){
+              $("#W").html("User Wins");
+        }
+        if(red === "rock" && Crandom === "paper"){
+              $("#W").html("Computer Wins");
+        }
+        if(red === "paper" && Crandom === "scissors"){
+              $("#W").html("Computer Wins");
+        }
+        if(red === "scissors" && Crandom === "paper"){
+              $("#W").html("User Wins");
+        }
+      });
+      
 });
-
